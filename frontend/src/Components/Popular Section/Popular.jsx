@@ -1,25 +1,25 @@
-import "./Popular.css";
 import dataProduct from "../Assets/data";
 import Item from "../Website Items/Item";
+import "./Popular.css";
 export default function Popular() {
   return (
-    <div className="popular">
+    <section className="popular">
       <h1>POPULAR IN WOMEN</h1>
       <hr />
-      <div className="popular-item">
-        {dataProduct.map((item, i) => {
+      <section className="popular-items">
+        {dataProduct.map(({ id, name, image, newPrice, oldPrice }, i) => {
           return (
             <Item
               key={i}
-              id={item.id}
-              name={item.name}
-              image={item.image}
-              new_price={item.new_price}
-              old_price={item.old_price}
+              id={id}
+              name={name}
+              image={image}
+              newPrice={newPrice}
+              oldPrice={oldPrice}
             />
           );
         })}
-      </div>
-    </div>
+      </section>
+    </section>
   );
 }

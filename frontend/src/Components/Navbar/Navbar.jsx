@@ -1,67 +1,47 @@
-import "./Navbar.css";
 import Logo from "../Assets/logo.png";
 import Carticon from "../Assets/cart_icon.png";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
+
+const menuItems = [
+  { key: "/", label: "Home" },
+  { key: "mens", label: "Mens" },
+  { key: "womens", label: "Womens" },
+  { key: "kids", label: "Kids" },
+];
+
 export default function Navbar() {
-  const [menu, setMenu] = useState("home");
   return (
     <nav className="navbar">
+      {/* Navbar Logo */}
       <div className="navbar-logo">
         <img src={Logo} alt="Store Logo" />
-        <a href="/">
+        <NavLink to="/">
           <p>Exclusive</p>
-        </a>
+        </NavLink>
       </div>
+      {/* Navbar Menu */}
       <ul className="navbar-menu">
-        <li
-          onClick={() => {
-            setMenu("home");
-          }}
-          className={menu === "home" ? "active" : ""}
-        >
-          <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-            Home
-          </Link>
-        </li>
-        <li
-          onClick={() => {
-            setMenu("mens");
-          }}
-          className={menu === "mens" ? "active" : ""}
-        >
-          <Link to="mens" style={{ textDecoration: "none", color: "black" }}>
-            Men
-          </Link>
-        </li>
-        <li
-          onClick={() => {
-            setMenu("womens");
-          }}
-          className={menu === "womens" ? "active" : ""}
-        >
-          <Link to="womens" style={{ textDecoration: "none", color: "black" }}>
-            Women
-          </Link>
-        </li>
-        <li
-          onClick={() => {
-            setMenu("kids");
-          }}
-          className={menu === "kids" ? "active" : ""}
-        >
-          <Link to="kids" style={{ textDecoration: "none", color: "black" }}>
-            Kids
-          </Link>
-        </li>
+        {menuItems.map((item) => (
+          <li key={item.key}>
+            <NavLink
+              to={item.key}
+              activeclassname="true"
+              style={{ textDecoration: "none", color: "#000" }}
+            >
+              {item.label}
+            </NavLink>
+          </li>
+        ))}
       </ul>
+      {/* Navbar Login */}
       <div className="nav-login">
-        <Link to="login">
+        <NavLink to="login">
           <button>Login</button>
-        </Link>
-        <Link to="cart">
+        </NavLink>
+        <NavLink to="cart">
           <img src={Carticon} alt="Cart Icon" />
-        </Link>
+        </NavLink>
         <div className="nav_cart-counter">0</div>
       </div>
     </nav>

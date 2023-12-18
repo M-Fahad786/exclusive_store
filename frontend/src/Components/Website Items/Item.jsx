@@ -1,13 +1,20 @@
+import { PropTypes } from "prop-types";
 import "./Item.css";
-export default function Item(props) {
+export default function Item({ image, name, newPrice, oldPrice }) {
   return (
-    <div className="item">
-      <img src={props.image} alt="Item img" />
-      <p>{props.name}</p>
+    <article className="item">
+      <img src={image} alt="Item img" />
+      <p>{name}</p>
       <div className="items-price">
-        <div className="items-prices-new">${props.new_price}</div>
-        <div className="items-prices-old">${props.old_price}</div>
+        <div className="items-prices-new">${newPrice}</div>
+        <div className="items-prices-old">${oldPrice}</div>
       </div>
-    </div>
+    </article>
   );
 }
+Item.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  newPrice: PropTypes.number.isRequired,
+  oldPrice: PropTypes.number.isRequired,
+};

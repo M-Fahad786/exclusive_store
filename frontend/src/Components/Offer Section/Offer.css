@@ -8,26 +8,26 @@
   background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
 }
 
-.offer-sec-left {
+.offer-text {
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: center;
 }
 
-.offer-sec-left h1 {
+.offer-text h1 {
   color: #171717;
   font-size: 80px;
   font-weight: 600;
 }
 
-.offer-sec-left p {
+.offer-text p {
   color: #171717;
   font-size: 22px;
   font-weight: 600;
 }
 
-.offer-sec-left button {
+.offer-text button {
   width: 282px;
   height: 70px;
   border-radius: 35px;
@@ -40,10 +40,10 @@
   cursor: pointer;
 }
 
-.offer-sec-right {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-top: 50px;
+.offer-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 50px;
 }

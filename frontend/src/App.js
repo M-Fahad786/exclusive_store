@@ -1,11 +1,11 @@
-import "./App.css";
-import Navbar from "./Components/Navbar/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Cart from "./Pages/Cart";
 import Home from "./Pages/Home";
+import Login from "./Pages/Login";
+import Navbar from "./Components/Navbar/Navbar";
 import ProductDetails from "./Pages/ProductDetails";
 import Products from "./Pages/Product";
-import Login from "./Pages/Login";
-import Cart from "./Pages/Cart";
+import "./App.css";
 
 export default function App() {
   return (
