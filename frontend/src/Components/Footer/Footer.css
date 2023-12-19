@@ -33,6 +33,7 @@
 .footer-social-icons {
   display: flex;
   gap: 20px;
+  cursor: pointer;
 }
 
 .footer-icons-container {
