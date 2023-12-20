@@ -1,6 +1,6 @@
 import { PropTypes } from "prop-types";
 import "./Item.css";
-export default function Item({ image, name, newPrice, oldPrice }) {
+export default function Item({ image, name, newPrice, oldPrice}) {
   return (
     <article className="item">
       <img src={image} alt="Item img" />
