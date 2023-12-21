@@ -1,9 +1,11 @@
-import { PropTypes } from "prop-types";
+import { NavLink } from "react-router-dom";
 import "./Item.css";
-export default function Item({ image, name, newPrice, oldPrice}) {
+export default function Item({ image, name, newPrice, oldPrice, id }) {
   return (
     <article className="item">
-      <img src={image} alt="Item img" />
+      <NavLink to={`/product/${id}`}>
+        <img src={image} alt="Item img" />
+      </NavLink>
       <p>{name}</p>
       <div className="items-price">
         <div className="items-prices-new">${newPrice}</div>
@@ -12,9 +14,3 @@ export default function Item({ image, name, newPrice, oldPrice}) {
     </article>
   );
 }
-Item.propTypes = {
-  image: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  newPrice: PropTypes.number.isRequired,
-  oldPrice: PropTypes.number.isRequired,
-};

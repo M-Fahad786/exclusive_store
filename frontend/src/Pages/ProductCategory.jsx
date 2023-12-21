@@ -37,7 +37,7 @@ export default function ProductCategory({ banner, category }) {
               />
             );
           } else {
-            return <p>No Product Found! Please Try Again.</p>;
+            return null;
           }
         })}
       </article>
