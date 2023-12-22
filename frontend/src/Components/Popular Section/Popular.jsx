@@ -4,7 +4,7 @@ import "./Popular.css";
 export default function Popular() {
   return (
     <section className="popular">
-      <h1>POPULAR IN WOMEN</h1>
+      <h1>POPULAR GAMES IN PLAYSTATION</h1>
       <hr />
       <section className="popular-items">
         {dataProduct.map(({ id, name, image, newPrice, oldPrice }, i) => {

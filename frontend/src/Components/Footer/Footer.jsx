@@ -1,4 +1,4 @@
-import footerLogo from "../Assets/logo_big.png";
+import footerLogo from "../Assets/logo.png";
 import instagramIcon from "../Assets/instagram_icon.png";
 import pintrestIcon from "../Assets/pintester_icon.png";
 import whatsaappIcon from "../Assets/whatsapp_icon.png";

@@ -1,10 +1,23 @@
 * {
   margin: 0;
 }
+
+.dark-theme {
+  background: linear-gradient(181deg, #000 0.82%, #4a2800 129.1%);
+  /* --main-heading: #fff;
+  --para-color: #fff; */
+}
+
+.light-theme {
+  background: linear-gradient(181deg, #f7f7f7 0.82%, #ffdab9 129.1%);
+  /* --main-heading: #000;
+  --para-color: #000; */
+}
 body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  backdrop-filter: blur(7px);
 }
 
 code {

@@ -14,15 +14,15 @@ export default function BrowserRouter() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route
-        path="/mens"
+        path="/playstation"
         element={<ProductCategory banner={menBanner} category="mens" />}
       />
       <Route
-        path="/womens"
+        path="/xbox"
         element={<ProductCategory banner={womenBanner} category="womens" />}
       />
       <Route
-        path="/kids"
+        path="/pc"
         element={<ProductCategory banner={kidsBanner} category="kids" />}
       />
       <Route path="/product" element={<Product />} />

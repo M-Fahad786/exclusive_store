@@ -1,6 +1,5 @@
 .header-section {
   height: 100vh;
-  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
   display: flex;
 }
 
@@ -11,18 +10,18 @@
   flex: 1;
   gap: 20px;
   padding-left: 180px;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .header-left h2 {
-  color: #090909;
+  color: #fa9021;
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .header-left p {
-  color: #171717;
+  color: #fff;
   font-size: 100px;
   font-weight: 100px;
   font-weight: 700;
@@ -41,21 +40,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  width: 310px;
-  height: 70px;
-  border-radius: 75px;
-  margin-top: 30px;
-  background: #ff4141;
+  width: 220px;
+  height: 53px;
+  margin-top: 20px;
+  border-radius: 40px;
+  background: linear-gradient(92deg, #fa8305 2.08%, #fb9e3c 117.25%);
   color: #fff;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 500;
   cursor: pointer;
 }
 
 .header-right {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }

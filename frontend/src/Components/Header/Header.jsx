@@ -1,25 +1,19 @@
-import handIcon from "../Assets/hand_icon.png";
-import arrowIcon from "../Assets/arrow.png";
-import headerImg from "../Assets/header_image.png";
+import headerImg from "../Assets/joy_stick.png";
 import "./Header.css";
 export default function Header() {
   return (
     <section className="header-section">
       <div className="header-left">
-        <h2>Latest Trend Only</h2>
+        <h2>New Arrivals</h2>
         <div>
           <div className="header-icon-left">
-            <p>new</p>
-            <img src={handIcon} alt="New Arrival Icon" />
+            <p>Level Up</p>
           </div>
-          <p>Collections</p>
-          <p>For Everyone</p>
+          <p>Your Gaming </p>
+          <p>Experience</p>
         </div>
         <div className="header-btn">
-          <div>
-            Latest Collection
-            <img src={arrowIcon} alt="Arrow for Latest Collection" />
-          </div>
+          <div>See Latest Collections</div>
         </div>
       </div>
       <div className="header-right">

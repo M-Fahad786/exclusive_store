@@ -5,7 +5,8 @@
   margin: auto;
   padding: 0px 140px;
   margin-bottom: 150px;
-  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  border-radius: 5px;
+  background: url("../Assets/Background\ image.png") center/cover no-repeat;
 }
 
 .offer-text {
@@ -16,13 +17,13 @@
 }
 
 .offer-text h1 {
-  color: #171717;
+  color: #fff;
   font-size: 80px;
   font-weight: 600;
 }
 
 .offer-text p {
-  color: #171717;
+  color: #fff;
   font-size: 22px;
   font-weight: 600;
 }

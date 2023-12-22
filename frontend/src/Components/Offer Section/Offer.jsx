@@ -1,4 +1,4 @@
-import Exclusiveimage from "../Assets/exclusive_image.png";
+import backgroundImag from "../Assets/Background image.png"
 import "./Offer.css";
 export default function Offer() {
   return (
@@ -10,7 +10,7 @@ export default function Offer() {
         <button aria-label="Check Now">Check Now</button>
       </article>
       <article className="offer-image">
-        <img src={Exclusiveimage} alt="Exclusive img" />
+        {/* <img src={backgroundImag} alt="Exclusive img" /> */}
       </article>
     </section>
   );
