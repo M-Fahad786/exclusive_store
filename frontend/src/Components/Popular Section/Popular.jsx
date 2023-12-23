@@ -1,13 +1,12 @@
-import dataProduct from "../Assets/data";
+import productData from "../Assets/data";
 import Item from "../Website Items/Item";
 import "./Popular.css";
 export default function Popular() {
   return (
     <section className="popular">
-      <h1>POPULAR GAMES IN PLAYSTATION</h1>
-      <hr />
+      <h1>POPULAR GAMES IN Xbox</h1>
       <section className="popular-items">
-        {dataProduct.map(({ id, name, image, newPrice, oldPrice }, i) => {
+        {productData.map(({ id, name, image, newPrice, oldPrice }, i) => {
           return (
             <Item
               key={i}

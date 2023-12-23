@@ -4,7 +4,7 @@ import "./Newcollection.css";
 export default function NewCollection() {
   return (
     <section className="newCollections">
-      <h1>NEW COLLECTION</h1>
+      <h1>NEW RELEASES</h1>
       <hr />
       <article className="itemCollections">
         {newCollections.map(({ id, name, image, oldPrice, newPrice }, i) => {

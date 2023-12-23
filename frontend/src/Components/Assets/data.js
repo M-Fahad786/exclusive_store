@@ -1,36 +1,35 @@
-import blouseImage from "./product_1.png";
-import shirtImage from "./product_2.png";
-import dressImage from "./product_3.png";
-import pantsImage from "./product_4.png";
-
+import nfsHeat from "./game4.jpg";
+import baldursGate from "./game8.jpg";
+import cod from "./game7.jpg";
+import avatar from "./game3.jpg";
 let dataProduct = [
   {
     id: 1,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: blouseImage,
-    newPrice: 50.0,
-    oldPrice: 80.5,
+    name: "Need for Speed™ Heat Deluxe Edition",
+    image: nfsHeat,
+    newPrice: 3.49,
+    oldPrice: 69.99,
   },
   {
     id: 2,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: shirtImage,
-    newPrice: 85.0,
-    oldPrice: 120.5,
+    name: "Baldur's Gate 3",
+    image: baldursGate,
+    newPrice: 69.99,
+    oldPrice: 85.49,
   },
   {
     id: 3,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: dressImage,
-    newPrice: 60.0,
-    oldPrice: 100.5,
+    name: "Call of Duty®: Modern Warfare® III",
+    image: cod,
+    newPrice: 48.99,
+    oldPrice: 69.99,
   },
   {
     id: 4,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: pantsImage,
-    newPrice: 100.0,
-    oldPrice: 150.0,
+    name: "Avatar: Frontiers of Pandora™",
+    image: avatar,
+    newPrice: 65.49,
+    oldPrice: 75.49,
   },
 ];
 
