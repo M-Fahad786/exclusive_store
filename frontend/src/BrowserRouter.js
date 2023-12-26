@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import ProductCategory from "./Pages/ProductCategory";
 import Product from "./Pages/Product";
+import ErrorPage from "./Pages/ErrorPage";
 import menBanner from "./Components/Assets/banner_mens.png";
 import womenBanner from "./Components/Assets/banner_women.png";
 import kidsBanner from "./Components/Assets/banner_kids.png";
@@ -28,7 +29,8 @@ export default function BrowserRouter() {
       <Route path="/product" element={<Product />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/login" element={<Login />} />
-      <Route path=":productId" element={<Product />} />
+      <Route path="/product/:productId" element={<Product />} />
+      <Route path="*" element={<ErrorPage />}></Route>
     </Routes>
   );
 }
