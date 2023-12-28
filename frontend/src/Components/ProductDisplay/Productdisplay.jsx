@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Productdisplay.css";
 import starIcon from "../Assets/star_icon.png";
 import starIcondull from "../Assets/star_dull_icon.png";
+import { ShopContext } from "../../Context/ShopContext";
 
 const Productdisplay = ({ product }) => {
-  const { image, name, oldPrice, newPrice } = product;
+  const { image, name, oldPrice, newPrice, id } = product;
 
   const starIcons = Array.from({ length: 5 }, (_, index) => (
     <img
@@ -24,6 +25,7 @@ const Productdisplay = ({ product }) => {
     />
   ));
 
+  const { addToCart } = useContext(ShopContext);
   return (
     <section className="product-display">
       <article className="product-display-left">
@@ -57,14 +59,21 @@ const Productdisplay = ({ product }) => {
             <div>PC</div>
           </div>
         </div>
-        <button>ADD TO CART</button>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            addToCart(id);
+          }}
+        >
+          ADD TO CART
+        </button>
         <p className="product-category">
           <span>Category: </span>
-           Women , T-Shirt Crop Top
+          Women , T-Shirt Crop Top
         </p>
         <p className="product-category">
           <span>Tags: </span>
-           Modern, Latest
+          Modern, Latest
         </p>
       </article>
     </section>

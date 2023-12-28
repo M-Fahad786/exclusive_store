@@ -3,7 +3,7 @@ import "./Item.css";
 export default function Item({ image, name, newPrice, oldPrice, id }) {
   return (
     <article className="item">
-      <NavLink to={`/product/${id}`}>
+      <NavLink to={`/product/${id}`} onClick={window.scrollTo(0,0)}>
         <img src={image} alt="Item img" />
       </NavLink>
       <p>{name}</p>
